@@ -7,7 +7,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "rollup -c",
-    "prepare": "yarn run build"
+    "prepublishOnly": "yarn run build"
   },
   "repository": "https://github.com/sethyuan/rambda",
   "author": "Seth <sethyuan@gmail.com>",
