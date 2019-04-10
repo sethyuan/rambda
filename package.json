@@ -1,5 +1,5 @@
 {
-  "name": "@seth/rambda",
+  "name": "@sethyuan/rambda",
   "version": "1.0.0",
   "description": "Extensions to the Rambda library",
   "main": "dist/rambda.js",
