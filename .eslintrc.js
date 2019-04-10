@@ -1,0 +1,38 @@
+module.exports = {
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: "module",
+    ecmaFeatures: {
+      impliedStrict: true,
+    },
+  },
+  parser: "babel-eslint",
+  plugins: ["babel"],
+  extends: ["eslint:recommended", "prettier"],
+  env: {
+    es6: true,
+    commonjs: true,
+  },
+  rules: {
+    "object-shorthand": "error",
+    camelcase: ["error", { properties: "never" }],
+    eqeqeq: ["error", "smart"],
+    "linebreak-style": ["error", "unix"],
+    "new-cap": "error",
+    "no-array-constructor": "error",
+    "no-loop-func": "error",
+    "no-param-reassign": "error",
+    "no-sequences": "error",
+    "no-shadow-restricted-names": "error",
+    "no-unneeded-ternary": "error",
+    "no-unused-expressions": "off",
+    "no-unused-vars": ["error", { args: "none" }],
+    "no-use-before-define": ["error", "nofunc"],
+    "no-var": "error",
+    "prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "wrap-iife": ["error", "inside"],
+    yoda: ["error", "never"],
+  },
+}
