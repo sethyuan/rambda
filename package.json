@@ -9,6 +9,9 @@
     "build": "rollup -c",
     "prepublishOnly": "yarn run build"
   },
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/sethyuan/rambda",
   "author": "Seth <sethyuan@gmail.com>",
   "license": "MIT",
