@@ -1,4 +1,3 @@
-import { resolve } from "path"
 import babel from "rollup-plugin-babel"
 import moduleResolve from "rollup-plugin-node-resolve"
 
@@ -22,7 +21,7 @@ export default {
     }),
     babel({
       extensions: [".js"],
-      include: [resolve("src")],
+      include: "src/**",
     }),
   ],
   external: peerDeps,
